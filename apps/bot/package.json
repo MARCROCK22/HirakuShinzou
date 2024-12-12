@@ -24,7 +24,6 @@
 		"moment": "^2.30.1",
 		"mongoose": "^8.6.1",
 		"node-cron": "^3.0.3",
-		"npm": "^10.9.2",
 		"reflect-metadata": "^0.2.2",
 		"seyfert": "https://pkg.pr.new/tiramisulabs/seyfert@305"
 	},
