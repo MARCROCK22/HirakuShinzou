@@ -50,6 +50,9 @@ importers:
       dotenv-cli:
         specifier: ^7.4.2
         version: 7.4.2
+      i:
+        specifier: ^0.3.7
+        version: 0.3.7
       inversify:
         specifier: ^6.0.2
         version: 6.0.2
@@ -65,12 +68,15 @@ importers:
       node-cron:
         specifier: ^3.0.3
         version: 3.0.3
+      npm:
+        specifier: ^10.9.2
+        version: 10.9.2
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
       seyfert:
-        specifier: github:tiramisulabs/seyfert
-        version: https://codeload.github.com/tiramisulabs/seyfert/tar.gz/f7c8b437e96d7773a95d2f88d2ad0c6d1e32f232
+        specifier: https://pkg.pr.new/tiramisulabs/seyfert@305
+        version: https://pkg.pr.new/tiramisulabs/seyfert@305
     devDependencies:
       '@repo/logger':
         specifier: workspace:*
@@ -495,6 +501,10 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
+  i@0.3.7:
+    resolution: {integrity: sha512-FYz4wlXgkQwIPqhzC5TdNMLSE5+GS1IIDJZY/1ZiEPCT2S3COUVZeT5OW4BmW4r5LHLQuOosSwsvnroG9GR59Q==}
+    engines: {node: '>=0.4'}
+
   inversify@6.0.2:
     resolution: {integrity: sha512-i9m8j/7YIv4mDuYXUAcrpKPSaju/CIly9AHK5jvCBeoiM/2KEsuCQTTP+rzSWWpLYWRukdXFSl6ZTk2/uumbiA==}
 
@@ -679,6 +689,80 @@ packages:
     resolution: {integrity: sha512-ppwTtiJZq0O/ai0z7yfudtBpWIoxM8yE6nHi1X47eFR2EWORqfbu6CnPlNsjeN683eT0qG6H/Pyf9fCcvjnnnQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
+  npm@10.9.2:
+    resolution: {integrity: sha512-iriPEPIkoMYUy3F6f3wwSZAU93E0Eg6cHwIR6jzzOXWSy+SD/rOODEs74cVONHKSx2obXtuUoyidVEhISrisgQ==}
+    engines: {node: ^18.17.0 || >=20.5.0}
+    hasBin: true
+    bundledDependencies:
+      - '@isaacs/string-locale-compare'
+      - '@npmcli/arborist'
+      - '@npmcli/config'
+      - '@npmcli/fs'
+      - '@npmcli/map-workspaces'
+      - '@npmcli/package-json'
+      - '@npmcli/promise-spawn'
+      - '@npmcli/redact'
+      - '@npmcli/run-script'
+      - '@sigstore/tuf'
+      - abbrev
+      - archy
+      - cacache
+      - chalk
+      - ci-info
+      - cli-columns
+      - fastest-levenshtein
+      - fs-minipass
+      - glob
+      - graceful-fs
+      - hosted-git-info
+      - ini
+      - init-package-json
+      - is-cidr
+      - json-parse-even-better-errors
+      - libnpmaccess
+      - libnpmdiff
+      - libnpmexec
+      - libnpmfund
+      - libnpmhook
+      - libnpmorg
+      - libnpmpack
+      - libnpmpublish
+      - libnpmsearch
+      - libnpmteam
+      - libnpmversion
+      - make-fetch-happen
+      - minimatch
+      - minipass
+      - minipass-pipeline
+      - ms
+      - node-gyp
+      - nopt
+      - normalize-package-data
+      - npm-audit-report
+      - npm-install-checks
+      - npm-package-arg
+      - npm-pick-manifest
+      - npm-profile
+      - npm-registry-fetch
+      - npm-user-validate
+      - p-map
+      - pacote
+      - parse-conflict-json
+      - proc-log
+      - qrcode-terminal
+      - read
+      - semver
+      - spdx-expression-parse
+      - ssri
+      - supports-color
+      - tar
+      - text-table
+      - tiny-relative-date
+      - treeverse
+      - validate-npm-package-name
+      - which
+      - write-file-atomic
+
   onetime@6.0.0:
     resolution: {integrity: sha512-1FlR+gjXK7X+AsAHso35MnyN5KqGwJRi/31ft6x0M194ht7S+rWAvd7PHss9xSKMzE0asv1pyIHaJYq+BbacAQ==}
     engines: {node: '>=12'}
@@ -753,9 +837,9 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  seyfert@https://codeload.github.com/tiramisulabs/seyfert/tar.gz/f7c8b437e96d7773a95d2f88d2ad0c6d1e32f232:
-    resolution: {tarball: https://codeload.github.com/tiramisulabs/seyfert/tar.gz/f7c8b437e96d7773a95d2f88d2ad0c6d1e32f232}
-    version: 2.0.0
+  seyfert@https://pkg.pr.new/tiramisulabs/seyfert@305:
+    resolution: {tarball: https://pkg.pr.new/tiramisulabs/seyfert@305}
+    version: 2.1.0
 
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -1196,6 +1280,8 @@ snapshots:
 
   husky@9.1.5: {}
 
+  i@0.3.7: {}
+
   inversify@6.0.2: {}
 
   ioredis@5.4.1:
@@ -1380,6 +1466,8 @@ snapshots:
     dependencies:
       path-key: 4.0.0
 
+  npm@10.9.2: {}
+
   onetime@6.0.0:
     dependencies:
       mimic-fn: 4.0.0
@@ -1449,7 +1537,7 @@ snapshots:
 
   semver@7.6.3: {}
 
-  seyfert@https://codeload.github.com/tiramisulabs/seyfert/tar.gz/f7c8b437e96d7773a95d2f88d2ad0c6d1e32f232: {}
+  seyfert@https://pkg.pr.new/tiramisulabs/seyfert@305: {}
 
   shebang-command@2.0.0:
     dependencies:
