@@ -21,7 +21,7 @@ const options = {
 				name: "GPT 4 Turbo Vision",
 				value: "OPENAI-URL_gpt-4-vision-preview",
 			},
-		],
+		] as const,
 	}),
 };
 
